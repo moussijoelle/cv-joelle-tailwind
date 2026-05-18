@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>CV — Aficiones</title>
 </head>
-<body class="pagina-aficiones mx-auto w-[80%] bg-white font-['Verdana','Arial',sans-serif,'system-ui'] text-base leading-normal text-neutral-900">
+<body class="mx-auto w-[80%] bg-white font-['Verdana','Arial',sans-serif,'system-ui'] text-base leading-normal text-neutral-900">
 
     <header class="bg-[#58008b] p-[5px] text-center text-xs text-white">
         <a href="index.html" title="Inicio" aria-label="Inicio" class="mx-[5px] my-px text-white no-underline hover:underline">
@@ -16,7 +16,7 @@
         </a>
     </header>
 
-    <main class="pagina-aficiones">
+    <main class="w-full">
         <h1 class="mt-6 flex flex-wrap items-center justify-center gap-2 text-center text-2xl font-bold text-neutral-900">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="shrink-0" viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
@@ -25,12 +25,31 @@
             Aficiones
         </h1>
 
-        <section class="aficiones-gatos">
-            <p class="text-center">
+        <section class="mx-auto mt-6 max-w-5xl px-2" aria-labelledby="capturas-aficiones-titulo">
+            <h2 id="capturas-aficiones-titulo" class="mb-3 text-center text-lg font-bold text-[#58008b]">Capturas de esta página</h2>
+            <p class="mb-4 text-center text-sm text-neutral-700">Tres imágenes guardadas en <code class="rounded bg-neutral-100 px-1">img/repaso/</code> (principal y dos variantes).</p>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <figure class="rounded-lg border border-[#58008b]/30 bg-[#f3e9ff] p-2 text-center">
+                    <img src="img/repaso/images-08.png" alt="Captura principal de la página Aficiones" class="mx-auto h-auto w-full rounded shadow-sm" width="400" height="225" loading="lazy" decoding="async">
+                    <figcaption class="mt-2 text-xs text-[#58008b]">images-08.png</figcaption>
+                </figure>
+                <figure class="rounded-lg border border-[#58008b]/30 bg-[#f3e9ff] p-2 text-center">
+                    <img src="img/repaso/images-08-b.png" alt="Segunda captura Aficiones" class="mx-auto h-auto w-full rounded shadow-sm" width="400" height="225" loading="lazy" decoding="async">
+                    <figcaption class="mt-2 text-xs text-[#58008b]">images-08-b.png</figcaption>
+                </figure>
+                <figure class="rounded-lg border border-[#58008b]/30 bg-[#f3e9ff] p-2 text-center sm:col-span-2 lg:col-span-1">
+                    <img src="img/repaso/images-08-c.png" alt="Tercera captura Aficiones" class="mx-auto h-auto w-full rounded shadow-sm" width="400" height="225" loading="lazy" decoding="async">
+                    <figcaption class="mt-2 text-xs text-[#58008b]">images-08-c.png</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="mx-auto mt-6 max-w-5xl px-2">
+            <p class="text-center text-neutral-800">
                 Clica sobre la foto para ver mas
                 <a href="https://www.istockphoto.com/es/fotos/gatos" target="_blank" rel="noopener noreferrer" class="text-[#58008b] underline decoration-[rgba(88,0,139,0.35)] underline-offset-2 hover:text-[#3d0059]">fotos de gatitos</a>.
             </p>
-            <div class="foto-contenedor mt-8 inline-block bg-white p-2 text-left">
+            <div class="mt-8 inline-block rounded-md border border-neutral-200 bg-white p-2 text-left shadow-sm">
                 <a href="https://www.istockphoto.com/es/fotos/gatos" target="_blank" rel="noopener noreferrer">
                     <img src="img/gato.png" alt="cabeza de un gato negro." width="400" class="h-auto w-full max-w-[400px]">
                 </a>
@@ -98,7 +117,7 @@
         </section>
 
         <section class="mt-8">
-            <h1 class="rojo mb-4 text-center text-2xl font-bold text-red-600">Encuesta sobre tu gato</h1>
+            <h1 class="mb-4 text-center text-2xl font-bold text-red-600">Encuesta sobre tu gato</h1>
             <form>
                 <details class="mb-8 bg-[#f3e9ff] py-[10px]">
                     <summary class="bg-[#58008b] px-0.5 py-0.5 text-[1.2rem] leading-[1.3rem] text-white">ver código</summary>
@@ -118,7 +137,7 @@
                 <fieldset class="mb-4 rounded border border-neutral-400 p-3">
                     <legend class="px-1 font-semibold text-neutral-900">¿Qué rasgos de caracter presenta tu gato?</legend>
                     <input id="loving" type="checkbox" name="personality" value="loving" checked class="align-middle">
-                    <label for="loving" class="rojo text-red-600"> Es amoroso</label>
+                    <label for="loving" class="font-medium text-red-600"> Es amoroso</label>
                     <input id="lazy" type="checkbox" name="personality" value="lazy" class="ml-3 align-middle">
                     <label for="lazy"> Es perezoso</label>
                     <input id="energetic" type="checkbox" name="personality" value="energetic" class="ml-3 align-middle">
